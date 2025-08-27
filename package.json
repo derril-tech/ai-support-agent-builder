@@ -1,0 +1,44 @@
+{
+  "name": "ai-support-agent-builder",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "db:migrate": "cd apps/api && npm run db:migrate",
+    "db:seed": "cd apps/api && npm run db:seed",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "turbo": "^1.10.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  }
+}

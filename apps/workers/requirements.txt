@@ -1,0 +1,11 @@
+# Created automatically by Cursor AI (2025-08-27)
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+pydantic==2.8.2
+langdetect==1.0.9
+scikit-learn==1.4.2
+numpy==1.26.4
+nltk==3.8.1
+nats-py==2.6.0
+redis==5.0.4
+requests==2.32.3

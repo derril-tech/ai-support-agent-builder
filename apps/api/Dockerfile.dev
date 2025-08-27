@@ -1,0 +1,12 @@
+# Created automatically by Cursor AI (2025-08-27)
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package.json ../../package.json /tmp/
+RUN npm --prefix /tmp install && mkdir -p /app && cp -a /tmp/node_modules /app/
+
+COPY . .
+
+EXPOSE 3001
+CMD ["npm", "run", "start:dev"]

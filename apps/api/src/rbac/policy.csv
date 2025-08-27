@@ -1,0 +1,16 @@
+p, owner, /v1/.*, get
+p, owner, /v1/.*, post
+p, owner, /v1/.*, put
+p, owner, /v1/.*, delete
+
+p, admin, /v1/.*, get
+p, admin, /v1/.*, post
+p, admin, /v1/.*, put
+
+p, designer, /v1/agents.*, get
+p, designer, /v1/agents.*, post
+
+p, operator, /v1/conversations.*, get
+p, operator, /v1/conversations.*, post
+
+p, viewer, /v1/.*, get

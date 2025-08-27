@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # Redis for caching and sessions
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --requirepass redis_password
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "redis_password", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      - REDIS_PASSWORD=redis_password
+
+  # NATS for messaging
+  nats:
+    image: nats:2-alpine
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+    command: nats-server --jetstream --http_port 8222 --tls --tlscert /etc/nats/certs/server.crt --tlskey /etc/nats/certs/server.key --tlscacert /etc/nats/certs/ca.crt
+    volumes:
+      - ./certs/nats:/etc/nats/certs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8222/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # NATS TLS certificates (self-signed for dev)
+  nats-certs:
+    image: alpine:latest
+    volumes:
+      - ./certs/nats:/certs
+    command: |
+      sh -c "
+        apk add --no-cache openssl &&
+        mkdir -p /certs &&
+        openssl req -x509 -newkey rsa:4096 -keyout /certs/server.key -out /certs/server.crt -days 365 -nodes -subj '/CN=nats' &&
+        cp /certs/server.crt /certs/ca.crt &&
+        chmod 644 /certs/*.crt &&
+        chmod 600 /certs/*.key
+      "
+
+volumes:
+  redis_data:

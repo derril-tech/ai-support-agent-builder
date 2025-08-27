@@ -1,0 +1,8 @@
+# Created automatically by Cursor AI (2025-08-27)
+FROM node:20-alpine
+WORKDIR /app
+COPY package.json package-lock.json* ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["npm", "run", "dev"]

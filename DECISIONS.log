@@ -1,0 +1,23 @@
+[2025-08-27] Initialized monorepo with Turbo workspaces and root tooling (ESLint, Prettier, Husky, lint-staged) to ensure consistent standards across apps and packages.
+[2025-08-27] Chose Docker Compose services for local Postgres 16 + pgvector, Redis, NATS (TLS in dev), and MinIO to emulate S3, aligning with ARCH.md.
+[2025-08-27] Added GitHub Actions CI for lint, type-check, tests, build, and security scan; deferred deploy steps to placeholders pending infra.
+[2025-08-27] Wrote SQL init with RLS enabled and vector indexes; avoiding synchronize=true in ORM to rely on migrations.
+[2025-08-27] Created Terraform stubs for S3/R2 and secrets; will parameterize and split modules later.
+[2025-08-27] Scaffolded NestJS API entry with Problem+JSON, Swagger, Zod pipe, Pino logger, health endpoints.
+[2025-08-27] Adopted Casbin RBAC with simple route-based policies for roles; will refine to resource-scoped checks later.
+[2025-08-27] Stubbed Users and Memberships CRUD to unblock frontend/API contracts before DB wiring.
+[2025-08-27] Agents: added versioning and diff endpoints (stub); persistence and semantic diff planned via migrations.
+[2025-08-27] Workers: created FastAPI service with language detection and basic intent classifier stubs to validate pipeline contracts.
+[2025-08-27] Added schema-first endpoints for flows, prompts, and policies to decouple config from execution.
+[2025-08-27] Implemented guardrails endpoints with simple regex stubs; to be replaced by ML filters later.
+[2025-08-27] Tools: created registry plus generic HTTP/GraphQL tool handlers for rapid integration.
+[2025-08-27] Knowledge: collection CRUD/upload stubs and workers for chunk/embedding, retrieval, rerank, and citation coverage.
+[2025-08-27] Deployments CRUD wired; conversations gained SSE streaming, CSAT, message posting, escalate, and wrap-up endpoints.
+[2025-08-27] Metrics: added /metrics Prometheus endpoint using prom-client; will add custom KPIs later.
+[2025-08-27] Sentry initialized with env DSN and low trace sampling; production tuning pending.
+[2025-08-27] Workers: added /dlq endpoints (depth, reprocess) as stubs; will integrate with queue backend.
+[2025-08-27] Deployments: added shadow mode toggles to support traffic mirroring experiments.
+[2025-08-27] Feature flags: lightweight controller for toggles to gate risky features.
+[2025-08-27] GitHub App: stub endpoints for install/callback/export; real OAuth/App flow to follow.
+[2025-08-27] Docs: added API index, embed guide, and SDK snippets for quick start.
+[2025-08-27] CI: added regression gate job placeholder; to be replaced by safety test suite.

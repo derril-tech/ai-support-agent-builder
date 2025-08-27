@@ -1,0 +1,72 @@
+# DONE.md
+
+## Phase 1
+- [2025-08-27] [Cursor] Initialize monorepo (frontend, backend, workers, shared packages).
+- [2025-08-27] [Cursor] Configure TypeScript, ESLint, Prettier, commit hooks.
+- [2025-08-27] [Cursor] Provision environments, secrets manager, CI/CD pipelines.
+- [2025-08-27] [Cursor] Stand up Postgres 16 with pgvector, enable RLS.
+- [2025-08-27] [Cursor] Create S3/R2 buckets with lifecycle.
+- [2025-08-27] [Cursor] Deploy Redis + NATS with TLS.
+- [2025-08-27] [Cursor] Scaffold NestJS API with OpenAPI, Problem+JSON, Zod validation.
+- [2025-08-27] [Cursor] Implement RBAC with Casbin (owner, admin, designer, operator, viewer).
+- [2025-08-27] [Cursor] CRUD for orgs, users, memberships.
+- [2025-08-27] [Cursor] CRUD for agents; immutable versions with draft/released/archived states.
+- [2025-08-27] [Cursor] Diff endpoint for agent versions.
+- [2025-08-27] [Cursor] Intent classifier (multilingual, thresholds).
+- [2025-08-27] [Cursor] Language detection service.
+- [2025-08-27] [Cursor] Flow runner schema (Ask → Retrieve → Tool → Escalate).
+- [2025-08-27] [Cursor] Prompt composer with channel style variants.
+- [2025-08-27] [Cursor] Policies schema (safety toggles, style, forbidden claims).
+- [2025-08-27] [Cursor] Guardrails: jailbreak detection, PII/PCI filters, profanity, self-harm routing.
+- [2025-08-27] [Cursor] Tool registry per org.
+- [2025-08-27] [Cursor] Generic HTTP/GraphQL tool support.
+- [2025-08-27] [Cursor] Chunk and embed docs; hybrid retrieval with rerank.
+- [2025-08-27] [Cursor] Citation builder with anchors and confidence scores.
+- [2025-08-27] [Cursor] Enforce strict citation mode.
+- [2025-08-27] [Cursor] Deployments CRUD (env, channel, config).
+- [2025-08-27] [Cursor] CSAT submission API.
+- [2025-08-27] [Cursor] SSE streams for conversation execution.
+- [2025-08-27] [Cursor] Problem+JSON renderer with remediation hints.
+- [2025-08-27] [Cursor] Prometheus metrics for KPIs and DLQ depth.
+- [2025-08-27] [Cursor] Sentry integration for errors.
+- [2025-08-27] [Cursor] DLQ processing with retries/backoff (stubs).
+- [2025-08-27] [Cursor] Shadow mode enable/disable endpoints.
+- [2025-08-27] [Cursor] Web widget preview component (SSE demo).
+- [2025-08-27] [Cursor] KPI aggregation cron stub.
+- [2025-08-27] [Cursor] Knowledge collections CRUD, document upload, virus scan.
+- [2025-08-27] [Cursor] Satisfaction survey + wrap-up.
+- [2025-08-27] [Cursor] Regression gate with must-pass safety tests.
+- [2025-08-27] [Cursor] Cost attribution per provider/tool.
+- [2025-08-27] [Cursor] Anomaly detection with alerts.
+- [2025-08-27] [Cursor] Optional Twilio Voice channel.
+- [2025-08-27] [Cursor] Feature flags for risky changes.
+- [2025-08-27] [Cursor] GitHub App integration to export agent configs (stub).
+- [2025-08-27] [Cursor] CI checks for regression gates before release (stub job).
+- [2025-08-27] [Cursor] API docs (OpenAPI), SDK snippets, embed guides.
+- [2025-08-27] [Cursor] Pagination/cursor across list endpoints.
+- [2025-08-27] [Cursor] Conversations store with external thread mapping.
+- [2025-08-27] [Cursor] Message persistence with citations, tool I/O, cost, latency.
+- [2025-08-27] [Cursor] Blue/green deployments guide and health checks endpoints.
+- [2025-08-27] [Cursor] Synthetic monitoring guide for widget/webhooks.
+- [2025-08-27] [Cursor] Runbooks for outages, tool failures, rate-limit playbooks.
+- [2025-08-27] [Cursor] Knowledge uploader and collection table with reindex controls.
+- [2025-08-27] [Cursor] Eval results: table, slice breakdown, confusion matrix, export (stub UI).
+- [2025-08-27] [Cursor] Analytics dashboards with KPI cards, timeseries (stub UI).
+- [2025-08-27] [Cursor] Public share links for transcripts with TTL/watermark.
+- [2025-08-27] [Cursor] Transcript export jobs (JSON/HTML/PDF).
+- [2025-08-27] [Cursor] Integrate Zendesk, Intercom, Freshdesk, Jira SM, Stripe, Shopify, Salesforce, HubSpot tools.
+- [2025-08-27] [Cursor] Versions view with diff/release actions.
+- [2025-08-27] [Cursor] Deployments page for connectors and keys.
+- [2025-08-27] [Cursor] Conversations explorer with filters/search.
+- [2025-08-27] [Cursor] Conversation view with transcript, citations, tool logs, escalate, CSAT.
+- [2025-08-27] [Cursor] Settings: roles, API keys, SSO/SCIM, budgets, webhooks.
+- [2025-08-27] [Cursor] Operator console with presence, typing, handoff status.
+- [2025-08-27] [Cursor] Write SQL migrations, apply RLS policies.
+- [2025-08-27] [Cursor] Seed demo org, sample agent, synthetic convos.
+- [2025-08-27] [Cursor] Billing counters (messages, tokens, tool calls) and seat tracking.
+- [2025-08-27] [Cursor] Plan enforcement (limits per env/channel/tools).
+- [2025-08-27] [Cursor] Backup/restore runbooks, PITR validation.
+- [2025-08-27] [Cursor] Red-team datasets for jailbreak/injection.
+- [2025-08-27] [Cursor] Cost caps enforcement with admin notifications.
+- [2025-08-27] [Cursor] Localization framework + language packs.
+- [2025-08-27] [Cursor] Accessibility audits (keyboard, ARIA, contrast).
