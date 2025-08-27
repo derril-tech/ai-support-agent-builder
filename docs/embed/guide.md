@@ -9,3 +9,4 @@ Add the widget to your site:
   AgentWidget.mount('#agent-widget', { apiUrl: 'https://api.example.com/v1' });
 </script>
 ```
+

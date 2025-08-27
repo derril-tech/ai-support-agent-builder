@@ -7,3 +7,4 @@ export default function () {
   http.get('http://localhost:3001/v1/health/live');
   sleep(1);
 }
+

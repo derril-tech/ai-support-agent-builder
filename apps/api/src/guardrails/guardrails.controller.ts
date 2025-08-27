@@ -30,3 +30,4 @@ export class GuardrailsController {
     return { action: route };
   }
 }
+

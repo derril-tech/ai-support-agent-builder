@@ -38,6 +38,12 @@ import { SettingsModule } from './settings/settings.module';
 import { FlagsModule } from './flags/flags.module';
 import { GithubModule } from './github/github.module';
 import { BillingModule } from './billing/billing.module';
+import { SOC2ComplianceModule } from './compliance/soc2/soc2-compliance.module';
+import { GDPRComplianceModule } from './compliance/gdpr/gdpr-compliance.module';
+import { PenetrationTestingModule } from './security/penetration-testing/penetration-testing.module';
+import { IncidentResponseModule } from './security/incident-response/incident-response.module';
+import { ScalingModule } from './scaling/scaling.module';
+import { EnterpriseModule } from './enterprise/enterprise.module';
 
 import { DatabaseConfig } from './config/database.config';
 import { BullConfig } from './config/bull.config';
@@ -82,6 +88,12 @@ import { BullConfig } from './config/bull.config';
     FlagsModule,
     GithubModule,
     BillingModule,
+    SOC2ComplianceModule,
+    GDPRComplianceModule,
+    PenetrationTestingModule,
+    IncidentResponseModule,
+    ScalingModule,
+    EnterpriseModule,
   ],
 })
 export class AppModule {}

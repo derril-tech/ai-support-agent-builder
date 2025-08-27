@@ -11,3 +11,4 @@ export class FlagsController {
     return { updated: true, flag: body };
   }
 }
+

@@ -16,3 +16,4 @@ export class AnalyticsController {
   @Get('costs')
   costs() { return { perProvider: [], perTool: [] }; }
 }
+

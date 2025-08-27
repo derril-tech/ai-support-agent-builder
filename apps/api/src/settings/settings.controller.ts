@@ -14,3 +14,4 @@ export class SettingsController {
   @Post('webhooks')
   webhooks(@Body() body: { url: string; secret?: string }) { return { saved: true, ...body }; }
 }
+

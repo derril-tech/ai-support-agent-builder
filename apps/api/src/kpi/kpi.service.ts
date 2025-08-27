@@ -10,3 +10,4 @@ export class KpiService {
     // console.log('Aggregating KPIs...');
   }
 }
+

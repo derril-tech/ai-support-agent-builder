@@ -22,3 +22,4 @@ export class EnableRls1693146000000 implements MigrationInterface {
     await queryRunner.query(`ALTER TABLE conversations DISABLE ROW LEVEL SECURITY`);
   }
 }
+

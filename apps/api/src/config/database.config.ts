@@ -14,3 +14,4 @@ export class DatabaseConfig implements TypeOrmOptionsFactory {
     } as TypeOrmModuleOptions;
   }
 }
+

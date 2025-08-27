@@ -7,3 +7,4 @@ export class VoiceController {
     return `<Response><Say>Voice channel is under construction.</Say></Response>`;
   }
 }
+

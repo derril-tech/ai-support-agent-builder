@@ -17,3 +17,4 @@ export class EvalsController {
     return { passed: true, threshold: body.requiredPass, details: [] };
   }
 }
+

@@ -23,3 +23,4 @@ resource "aws_secretsmanager_secret_version" "app" {
 output "secrets_arn" {
   value = aws_secretsmanager_secret.app.arn
 }
+

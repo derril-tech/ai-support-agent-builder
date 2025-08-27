@@ -33,3 +33,4 @@ export class AuthController {
     return { access_token: token };
   }
 }
+

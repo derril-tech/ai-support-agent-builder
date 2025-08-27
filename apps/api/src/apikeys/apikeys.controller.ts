@@ -13,3 +13,4 @@ export class ApiKeysController {
   @Delete(':id')
   revoke(@Param('id') id: string) { return { id, revoked: true }; }
 }
+

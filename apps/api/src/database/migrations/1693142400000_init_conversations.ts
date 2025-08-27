@@ -13,3 +13,4 @@ export class InitConversations1693142400000 implements MigrationInterface {
     await queryRunner.query('DROP TABLE IF EXISTS "conversations"');
   }
 }
+

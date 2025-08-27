@@ -18,3 +18,4 @@ export class FlowsController {
   @Put(':id')
   update(@Param('id') id: string, @Body() body: Record<string, unknown>) { return { id, ...body }; }
 }
+

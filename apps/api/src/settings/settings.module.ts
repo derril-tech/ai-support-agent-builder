@@ -3,3 +3,4 @@ import { SettingsController } from './settings.controller';
 
 @Module({ controllers: [SettingsController] })
 export class SettingsModule {}
+

@@ -15,3 +15,4 @@ export class MessageEntity {
   @Column({ type: 'int', nullable: true }) latencyMs!: number | null;
   @CreateDateColumn() createdAt!: Date;
 }
+

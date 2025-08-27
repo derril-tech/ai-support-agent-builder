@@ -20,3 +20,4 @@ export class ToolsController {
   @Post('graphql')
   async graphqlTool(@Body(new ZodValidationPipe(graphqlToolSchema)) body: z.infer<typeof graphqlToolSchema>) { return { data: {}, requested: body }; }
 }
+

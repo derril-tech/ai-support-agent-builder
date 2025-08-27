@@ -15,3 +15,4 @@ export class ConnectorsController {
     return { provider, uninstalled: true };
   }
 }
+

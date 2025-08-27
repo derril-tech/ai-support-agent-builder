@@ -383,3 +383,4 @@ resource "aws_security_group" "redis" {
     Environment = var.environment
   }
 }
+

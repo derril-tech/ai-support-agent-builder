@@ -5,3 +5,4 @@
 - Communicate: status page + Slack.
 - Root cause: collect logs, traces, metrics.
 - Remediate: fix + write postmortem.
+

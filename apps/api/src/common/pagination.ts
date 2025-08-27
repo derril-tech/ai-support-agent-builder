@@ -7,3 +7,4 @@ export function paginateArray<T>(all: T[], { cursor, limit = 20 }: PaginationPar
   const nextCursor = start + limit < all.length ? String(start + limit) : null;
   return { items: slice, nextCursor };
 }
+

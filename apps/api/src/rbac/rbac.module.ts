@@ -21,3 +21,4 @@ import { RbacGuard } from './rbac.guard';
   exports: ['CASBIN_ENFORCER', RbacGuard],
 })
 export class RbacModule {}
+

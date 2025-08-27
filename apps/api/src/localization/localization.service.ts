@@ -339,3 +339,4 @@ export class LocalizationService {
     return Math.round((translatedKeys / totalKeys) * 100);
   }
 }
+

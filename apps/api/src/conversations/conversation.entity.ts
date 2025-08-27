@@ -9,3 +9,4 @@ export class ConversationEntity {
   @CreateDateColumn() createdAt!: Date;
   @UpdateDateColumn() updatedAt!: Date;
 }
+

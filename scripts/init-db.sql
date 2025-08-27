@@ -228,3 +228,4 @@ CREATE TRIGGER update_deployments_updated_at BEFORE UPDATE ON core.deployments
 
 CREATE TRIGGER update_conversations_updated_at BEFORE UPDATE ON core.conversations
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+

@@ -15,3 +15,4 @@ export class I18n {
     return cat[key] || key;
   }
 }
+

@@ -9,3 +9,4 @@ nltk==3.8.1
 nats-py==2.6.0
 redis==5.0.4
 requests==2.32.3
+

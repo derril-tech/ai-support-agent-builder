@@ -500,3 +500,4 @@ ${audit.recommendations.map(rec => `- ${rec}`).join('\n')}
     };
   }
 }
+
